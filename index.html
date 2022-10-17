@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website title -->
+    <title>MovieEngine</title>
+    <!-- including external css from fontawesome -->
+    <script src="https://kit.fontawesome.com/da2e089c9b.js" crossorigin="anonymous"></script>
+    <!-- including local css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div id="nav-left">
+            <!-- website logo -->
+            <div id="logo">
+                <img src="./resource/logo.png" alt="Logo" /><a href="#"></a>
+            </div>
+            <!-- page title -->
+            <div id="page-title">
+                <a href="#"><h1>MovieEngine</h1></a>
+            </div>
+            <!-- search box -->
+            <div class="search-area"> 
+                <div class="wrapper">
+                    <input type = "text" class = "form-control" placeholder="Search..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <div class = "search-list" id = "search-list">
+                </div>            
+            </div>
+        </div>
+        <div id="nav-right">
+            <!-- favourite movies -->
+            <div id="favourite-button">
+                <button id="my-list">
+                <a href="./favouriteMovies.html">Favourites</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- container for movie details -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movies information -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer>
+    </footer> -->
+    <!-- including local javascript -->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
