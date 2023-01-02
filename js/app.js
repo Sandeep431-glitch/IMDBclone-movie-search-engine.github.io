@@ -56,7 +56,7 @@ function loadMovieDetails(){
             // console.log(movie.dataset.id);
             searchList.classList.add('hide-search-list');
             movieSearchBox.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=f1e6e478`);
+            const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=f1e6e478`);
             const movieDetails = await result.json();
             // console.log(movieDetails);
             displayMovieDetails(movieDetails);
@@ -69,7 +69,7 @@ function displayMovieDetails(details){
 
     resultGrid.innerHTML = `
     <div class = "movie-poster">
-        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "../resource/image_not_found.png"}" alt = "movie poster">
     </div>
     
     <div class = "movie-info">
